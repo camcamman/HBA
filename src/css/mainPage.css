@@ -1,0 +1,48 @@
+.main-page-img-header {
+    width: 100%;
+    object-fit: cover;
+    height: 60vh;
+}
+
+.main-page-button {
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+    /* position: relative; */
+    position: absolute;
+    top: 70px;
+    
+    width: 10%;
+    height: 50px; 
+    /* top: 100px; */
+    
+    /* Background color of the button */
+    background-color: #0f7cfb;
+    
+    /* Text color of the button */
+    color: #fff;
+    
+    /* Border of the button */
+    border: 1px solid #035fc9;
+    
+}
+
+.main-page-button:hover {
+    /* On hover, change background color to match the border color */
+    background-color: #00379F !important;
+    /* background-color: black !important; */
+    
+    /* Add a delay to the hover effect to make it feel smooth */
+    transition-delay: 0.2s;
+    
+}
+
+.main-page-button:hover {
+    background-color: #4682B4;
+}
+
+.container {
+  position: relative;
+  overflow: visible;
+}
