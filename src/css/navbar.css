@@ -2,19 +2,29 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  font-size: 20px;
+  font-size: 100%;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 95%;
+
+
 }
 
 .nav-bar-text {
-    text-decoration: none !important;
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
+text-decoration: none !important;
+color: black;
+margin-left: 2px;
+margin-right: 2px;
+font-size: 20px;
+font-family: "Lato", sans-serif;
+font-weight: 700;
+line-height: 1.45; 
 }
 
 .nav-bar-text:hover {
   color: #0037A5 !important;
+  transition: color 0.3s ease;
 }
+
+/* meida query at 1050?
+can i make everything fit till that point */

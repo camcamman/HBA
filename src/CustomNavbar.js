@@ -17,6 +17,7 @@ const CustomNavbar = () => {
         <div className="navbar-nav">
         <div className="nav-bar-flex-box">
           <img src="https://hbautah.com/wp-content/uploads/2019/03/logo.jpg" alt="Logo" className="navbar-brand" />
+          <div className='gray-line'></div>
           <a href="#" className="nav-link" class="nav-bar-text">Home</a>
           <a href="#" className="nav-link" class="nav-bar-text">Courses</a>
           <a href="#" className="nav-link" class="nav-bar-text">Licensing Assistance</a>

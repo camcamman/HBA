@@ -7,6 +7,8 @@
 .main-page-button {
     left: 50%;
     transform: translateX(-50%);
+
+    font-size: 18px;
     
 
     /* position: relative; */
@@ -25,21 +27,14 @@
     
     /* Border of the button */
     border: 1px solid #035fc9;
+
+    transition: background-color 0.3s ease-in-out;
     
 }
 
 .main-page-button:hover {
     /* On hover, change background color to match the border color */
     background-color: #00379F !important;
-    /* background-color: black !important; */
-    
-    /* Add a delay to the hover effect to make it feel smooth */
-    transition-delay: 0.2s;
-    
-}
-
-.main-page-button:hover {
-    background-color: #4682B4;
 }
 
 .container {
