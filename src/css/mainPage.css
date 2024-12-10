@@ -13,6 +13,10 @@ body {
   
     /* Shift the visible part of the image */
     background-position: center -350px;
+
+    /* Keep the image centered and ensure it cuts off the sides */
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keeps background fixed during scroll */
   }  
 
 .how-to-get-licensed {
@@ -26,7 +30,7 @@ body {
     position: absolute;
     top: 124px;
     
-    width: 10%;
+    width: 15%;
     height: 50px; 
     
     /* Background color of the button */
