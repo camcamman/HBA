@@ -4,6 +4,10 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+.font-lato {
+    font-family: "Lato", sans-serif;
+}
+
 .header-container {
     background-image: url('https://plus.unsplash.com/premium_photo-1671808062726-2a7ffcd6109e?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
@@ -17,7 +21,20 @@ body {
     /* Keep the image centered and ensure it cuts off the sides */
     background-position: center;
     background-attachment: fixed; /* Optional: Keeps background fixed during scroll */
-  }  
+
+}  
+@media (max-width: 1384px) {
+    .header-container {
+        height: 700px;
+    }
+}
+
+@media (max-width: 755px) {
+    .header-container {
+        height: 800px;
+    }
+}
+
 
 .how-to-get-licensed {
     left: 50%;
@@ -77,8 +94,8 @@ body {
 
 .transparent-box {
     background: rgba(0, 0, 0, 0.51);
-    width: 200px;
-    height: 150px;
+    width: 15%;
+    height: 30%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
@@ -108,7 +125,7 @@ body {
     display: block;
     margin: 0 auto;
 
-    width: 150px;
+    width: 75%;
     height: 50px;
 }
 
@@ -183,7 +200,7 @@ body {
 
 
 .gray-box {
-    background-color: #d3d3d3;
+    background-color: rgba(191, 191, 191, 0.23);
     width: 100%;
     margin-top: 0;
     padding: 0;
@@ -193,5 +210,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 175%;
+    margin: 0;
 }
 
+
+
+.register-here-gray {
+    background-color: #0F7CFB; /* Blue background */
+    color: white; /* White text */
+    font-size: 30px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    padding: 15px 30px; /* Increased padding for a bigger button */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.register-here-gray:hover {
+    background-color: #00379F; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.register-here-gray:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.gray-box-columns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.gray-box-column-header {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}

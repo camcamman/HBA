@@ -10,7 +10,7 @@ const CustomNavbar = () => {
                 alt="house"/> */}
                 <button className="how-to-get-licensed" >How to get Licensed</button>   
 
-                <div class="transparent-box-container">
+                <div class="transparent-box-container font-lato">
 
                     <div class="transparent-box transparent-box-1">
                         <p class="transparent-box-text">Webinar<br /> Continuing Education</p>
@@ -44,20 +44,19 @@ const CustomNavbar = () => {
                   <div class="gray-box-header">
                     <h1>Get Your Contractor License Today!</h1>
                   </div>
-                  <div class="gray-box-content">
+                  
                   <div class="gray-box-columns">
-                    <div class="gray-box-column subcontractor">
-                      <p>Subcontractor License</p>
+                    <div class="gray-box-column subcontractor font-lato">
+                      <p class = "gray-box-column-header">Subcontractor License</p>
                       <p>25 Hour Pre License Course</p>
-                      <button href="https://google.com" target="_self" class="button">Register Here</button>
+                      <button href="https://google.com" target="_self" class="register-here-gray">Register Here</button>
                     </div>
-                    <div class="gray-box-column general-contractor">
-                      <p>30 Hour General Contractor License</p>
+                    <div class="gray-box-column general-contractor font-lato">
+                      <p class = "gray-box-column-header">30 Hour General Contractor License</p>
                       <p>25 Hour Pre License Course + 5 Hour Test Prep Course</p>
-                      <button href="https://google.com" target="_self" class="button">Register Here</button>
+                      <button href="https://google.com" target="_self" class="register-here-gray">Register Here</button>
                     </div>
                   </div>
-                </div>
             </div>
         </div>
     );
