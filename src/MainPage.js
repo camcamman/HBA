@@ -58,6 +58,14 @@ const CustomNavbar = () => {
                     </div>
                   </div>
             </div>
+            <div class="dopl-container">
+                <div class="tinted-box">
+                    <p class="dopl-paragraph font-lato">Free in class DOPL application assistance!</p>
+                </div>
+            </div>
+            <div class="extra-space">
+                <p>extra space</p>
+            </div>
         </div>
     );
 };
