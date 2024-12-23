@@ -8,6 +8,10 @@ body {
     font-family: "Lato", sans-serif;  
 }
 
+.hover-box{
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
 .header-container {
     background-image: url('https://plus.unsplash.com/premium_photo-1671808062726-2a7ffcd6109e?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
@@ -126,7 +130,8 @@ body {
     margin: 0 auto;
 
     width: 75%;
-    height: 50px;
+    min-height: 50px;
+    height: auto;
 
     font-size: 25px;
 }
@@ -297,8 +302,65 @@ body {
     align-items: center;
 }
 
+.how-much-ce-credit-container {
+    background-color: rgba(0,1,38,0.4);
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;  
+    flex-direction: column;
+}
 
 
+
+.how-much-ce-credit {
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    color: white; /* White text */
+
+    /* text-align: center; */
+    font-size: 35px;
+}
+
+.how-much-ce-credit-button {
+    background-color: #0F7CFB; /* Blue background */
+    color: white; /* White text */
+
+    font-size: 30px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+
+    width: 40%;
+    /* height: 50px; */
+    height: auto;
+    min-height: 50px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* 
+@media (min-width: 1724px) {
+    .how-much-ce-credit-button {
+        height: 70px;
+    }
+} */
+
+.how-much-ce-credit-button:hover {
+    background-color: #00379F; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
 
 
 

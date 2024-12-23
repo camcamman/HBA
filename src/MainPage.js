@@ -63,6 +63,12 @@ const CustomNavbar = () => {
                     <p class="dopl-paragraph font-lato">Free in class DOPL application assistance!</p>
                 </div>
             </div>
+
+            <div class="how-much-ce-credit-container">
+                <p class="how-much-ce-credit font-lato">Wondering how much CE credit you have?</p>
+                <button class="how-much-ce-credit-button font-lato" onClick={() => window.open("https://secure.utah.gov/ce-public/index.html", '_blank')}>Click Here To See What Is Recorded With DOPL</button>
+            </div>
+
             <div class="extra-space">
                 <p>extra space</p>
             </div>
