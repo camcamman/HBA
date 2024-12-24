@@ -350,12 +350,6 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-/* 
-@media (min-width: 1724px) {
-    .how-much-ce-credit-button {
-        height: 70px;
-    }
-} */
 
 .how-much-ce-credit-button:hover {
     background-color: #00379F; /* Darker blue on hover */
@@ -363,6 +357,83 @@ body {
 }
 
 
+
+.carousel-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.carousel-div{
+    width: 100x; 
+    min-height: 500px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel-image{
+    max-width: 30%;
+    height: 200%;
+}
+
+.carousel-text{
+    color: black;
+
+    font-size: 205%;
+
+    font-weight: bold;
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    max-width:40%;
+}
+
+.integraty-image{
+    margin-top: 35px;
+    max-width: 20%;
+    height: 15%
+}
+
+
+/* Style the container of the dots */
+.carousel .control-dots {
+    /* position: relative; */
+    /* top: 20px; */
+    /* margin-top: 20px; */
+    /* top: 500px; */
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+
+  /* Style individual dots */
+  .carousel .control-dots .dot {
+    background-color: #333; /* Default color */
+    /* border: 2x solid black*Add a border for better visibility */
+    width: 15px; /* Increase size */
+    height: 15px; /* Increase size */
+    border-radius: 50%; /* Make them circular */
+    margin: 0 5px; /* Space between dots */
+    opacity: 0.7; /* Default opacity */
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  /* Style the active dot */
+  .carousel .control-dots .dot.selected {
+    background-color: #007bff; /* Highlight active dot */
+    transform: scale(1.2); /* Slightly enlarge active dot */
+    opacity: 1; /* Make it fully visible */
+  }
+  
 
 
 

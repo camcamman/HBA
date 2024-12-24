@@ -1,13 +1,39 @@
 import React from "react";
 import './css/mainPage.css';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Correct CSS import
+// import "react-responsive-carousel/lib/styles/carousehttps://hbautah.com/wp-content/uploads/2023/08/adserver_theassociationpartner_net__www_images_bed3266918682ba0e5d35cf213774479_png.jpgl.min.css";
 const CustomNavbar = () => {
+
+    const images = [
+        // summitInsurance
+        {
+            url: "https://hbautah.com/wp-content/uploads/2024/01/image001.jpg",
+            text: "IS YOUR INSURANCE POLICY MISSING SOMETHING? (full of coverage exclusions)",
+            link: "https://www.summit-risk.com",
+            imageClass: "summitInsurance-image",
+            textClass: "summitInsurance-text"
+        },
+        // wcf insuance
+        { url: "https://hbautah.com/wp-content/uploads/2021/01/WCF-final..png",
+            text: "Flexible Insurance Solutions for Business of all Sizes",
+            link: "https://www.wcf.com/",
+            imageClass: "wcf-image",
+            textClass: "wcf-text"
+        },
+        // integraty
+        { url: "https://hbautah.com/wp-content/uploads/2023/08/adserver_theassociationpartner_net__www_images_bed3266918682ba0e5d35cf213774479_png.jpg", 
+            text: "YOUR LEADERS IN COMMERCIAL AND RESIDENTIAL TILE & FLOORING",
+            link: "https://www.integritycontracting.com",
+            imageClass: "integraty-image",
+            textClass: "integraty-text"
+        },
+    ];
+
     return (
         <div class="container">
             <div class="header-container">
 
-                {/* <img class ="main-page-img-header"
-                src="https://plus.unsplash.com/premium_photo-1671808062726-2a7ffcd6109e?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="house"/> */}
                 <button className="how-to-get-licensed" >How to get Licensed</button>   
 
                 <div class="transparent-box-container font-lato">
@@ -29,9 +55,6 @@ const CustomNavbar = () => {
                 <div class="online-continuing-education-container">
                     <button class="online-continuing-education" onClick={() => window.open("https://onlinece.hbautah.com/home/?site_template_id=60caa047fc128d640e5f0d25", '_self')}>Online Continuing Education</button>                
                 </div>
-                {/* <div class="online-continuing-education-container">
-                    <button class="online-continuing-education" onClick={() => window.open("https://onlinece.hbautah.com/home/?site_template_id=60caa047fc128d640e5f0d25", '_blank')}>Online Continuing Education</button>                
-                </div> */}
 
                 <div class="click-daily-updates">
                     <button class="click-daily-updates-button" onClick={() => window.open("https://www.tiktok.com/@hbaofutah", '_blank')}>Click Here for the Daily Legislation Update</button>
@@ -68,6 +91,32 @@ const CustomNavbar = () => {
                 <p class="how-much-ce-credit font-lato">Wondering how much CE credit you have?</p>
                 <button class="how-much-ce-credit-button font-lato" onClick={() => window.open("https://secure.utah.gov/ce-public/index.html", '_blank')}>Click Here To See What Is Recorded With DOPL</button>
             </div>
+
+
+
+            <Carousel
+                autoPlay
+                infiniteLoop
+                showThumbs={false}
+                showStatus={false}
+                interval={4000}>
+
+                {images.map((image, index) => (
+                <a href={image.link} target="_blank" rel="noopener noreferrer" className="carousel-link">
+                    <div key={index} className="carousel-div">
+                    <img src={image.url} alt={image.text} className={`carousel-image ${image.imageClass}`}/>
+                    <p className={`carousel-text font-lato ${image.textClass}`}>{image.text}</p>
+                    </div>
+                </a>
+                ))}
+            </Carousel>
+
+
+
+
+
+
+
 
             <div class="extra-space">
                 <p>extra space</p>
