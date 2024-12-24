@@ -1,3 +1,4 @@
+/* Navbar Styles */
 .nav-bar-flex-box {
   display: flex;
   flex-wrap: wrap;
@@ -6,8 +7,6 @@
   justify-content: space-between;
   align-items: center;
   width: 95%;
-
-
 }
 
 .nav-bar-text {
@@ -26,5 +25,46 @@
   transition: color 0.3s ease;
 }
 
-/* meida query at 1050?
-can i make everything fit till that point */
+/* Mobile Navbar Styles */
+@media (max-width: 768px) {
+  .nav-bar-flex-box {
+    display: none; /* Hide default navbar */
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .mobile-dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .mobile-dropdown a {
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .mobile-dropdown a:hover {
+    color: #0037A5;
+  }
+
+  .mobile-menu.active + .mobile-dropdown {
+    display: flex; /* Show dropdown when menu is active */
+  }
+}

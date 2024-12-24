@@ -1,8 +1,8 @@
 import React from "react";
-import './css/mainPage.css';
+import './css/mainPage/mainPage.css';
+import './css/mainPage/mainPagePhone.css';
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Correct CSS import
-// import "react-responsive-carousel/lib/styles/carousehttps://hbautah.com/wp-content/uploads/2023/08/adserver_theassociationpartner_net__www_images_bed3266918682ba0e5d35cf213774479_png.jpgl.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 const CustomNavbar = () => {
 
     const images = [
