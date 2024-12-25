@@ -33,8 +33,9 @@ const CustomNavbar = () => {
     return (
         <div class="container">
             <div class="header-container">
-
-                <button className="how-to-get-licensed" >How to get Licensed</button>   
+                <div class="how-to-get-licensed-button-container">
+                    <button className="how-to-get-licensed" >How to get Licensed</button>   
+                </div>
 
                 <div class="transparent-box-container font-lato">
 

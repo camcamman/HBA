@@ -25,23 +25,56 @@
   transition: color 0.3s ease;
 }
 
+.mobile-dropdown{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;}
+
+/* Mobile Navbar Styles */
 /* Mobile Navbar Styles */
 @media (max-width: 768px) {
-  .nav-bar-flex-box {
-    display: none; /* Hide default navbar */
-  }
-
   .mobile-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    width: 100%;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: none;
+    border: none;
+    margin: 0 auto;
+  }
+
+  .mobile-menu::before,
+  .mobile-menu::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+
+  /* Horizontal bar (for "+") */
+  .mobile-menu::before {
+    transform: rotate(0deg) translateY(0);
+  }
+
+  /* Vertical bar (for "+") */
+  .mobile-menu::after {
+    transform: rotate(90deg) translateY(0);
+  }
+
+  /* When active, transform into "X" */
+  .mobile-menu.active::before {
+    transform: rotate(45deg) translateY(0);
+  }
+
+  .mobile-menu.active::after {
+    transform: rotate(-45deg) translateY(0);
   }
 
   .mobile-dropdown {
@@ -66,5 +99,9 @@
 
   .mobile-menu.active + .mobile-dropdown {
     display: flex; /* Show dropdown when menu is active */
+  }
+
+  .nav-bar-flex-box{
+    display: none;
   }
 }

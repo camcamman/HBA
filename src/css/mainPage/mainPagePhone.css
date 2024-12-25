@@ -1,5 +1,30 @@
 /* Mobile Styles for Main Page */
 @media (max-width: 768px) {
+    .how-to-get-licensed {
+    
+        font-size: 210%;
+
+        min-width: 100%;
+    }
+    
+    .transparent-box-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .transparent-box {
+        margin-bottom: 30px;
+    }
+    
+    .online-continuing-education{
+        width: 100%;
+        min-height: 50px;
+    }
+    
+    .click-daily-updates-button {
+        width: 100%;
+    }
 
   }
   

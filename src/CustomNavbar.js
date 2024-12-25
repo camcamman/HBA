@@ -12,7 +12,7 @@ const CustomNavbar = () => {
           className={`mobile-menu ${menuOpen ? "active" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          ☰
+          {/* "+" and "X" effect handled via CSS */}
         </div>
 
         {/* Dropdown Menu */}
