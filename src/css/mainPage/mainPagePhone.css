@@ -26,5 +26,21 @@
         width: 100%;
     }
 
+
+    .gray-box-header {
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .gray-box-columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gray-box-column-header{
+        font-size: 23px;
+    }
+    
+
   }
   

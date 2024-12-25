@@ -168,18 +168,17 @@ body {
     justify-content: center;
 }   
 
-/* phone css up to here */
 .click-daily-updates-button {
     margin-top: 264px;
     margin-bottom: 30px;
     margin-top: 50px;
     width: 35%;
-
+    
     font-weight: 700;
     font-size: 25px;
     line-height: 1;
     
-
+    
     background: #FC2D25;
     border: none;
     color: white;
@@ -187,7 +186,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -219,6 +218,23 @@ body {
 }
 
 
+/* phone css up to here */
+
+.gray-box-columns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.gray-box-column-header {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
 
 .register-here-gray {
     background-color: #0F7CFB; /* Blue background */
@@ -241,22 +257,6 @@ body {
 
 .register-here-gray:focus {
     outline: none; /* Remove outline on focus */
-}
-
-.gray-box-columns {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-}
-
-.gray-box-column-header {
-    font-weight: bold;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 
