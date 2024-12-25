@@ -28,7 +28,6 @@
 
 
     .gray-box-header {
-        text-align: center;
         font-size: 100%;
     }
 
@@ -40,7 +39,28 @@
     .gray-box-column-header{
         font-size: 23px;
     }
-    
 
+    .how-much-ce-credit-button {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .carousel-image{
+        max-width: 30%;
+        height: 100%;
+    }
+    
+    .carousel-text{
+        font-size: 150%;
+    }
+
+
+
+  }
+
+  @media (max-width: 480px) {
+    .carousel-text{
+        font-size: 100%;
+    }
   }
   

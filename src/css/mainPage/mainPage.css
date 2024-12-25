@@ -215,10 +215,11 @@ body {
     font-family: Montserrat, sans-serif;
     font-size: 175%;
     margin: 0;
+
+    text-align: center;
 }
 
 
-/* phone css up to here */
 
 .gray-box-columns {
     display: flex;
@@ -246,7 +247,7 @@ body {
     border: none; /* Remove border */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-
+    
     margin-bottom: 50px;
 }
 
@@ -265,18 +266,23 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-
+    
     background-color: rgba(0, 0, 0, 0.5);
+    
+    /* min-height: 150px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .dopl-container {
-    height: 150px; /* Full height for vertical centering */
+    /* min-height: 150px; Full height for vertical centering */
+    height: 100%;
     width: 100%; /* Ensure it spans the full width of the page */
-
+    
     /* background-image: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
     background-repeat: no-repeat;
     background-attachment: fixed; */
-
+    
 
     background-image: url('https://plus.unsplash.com/premium_photo-1679923913642-648c40c7dda7?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
@@ -288,11 +294,11 @@ body {
     font-size: 250%; /* Larger font size */
     font-weight: bold; /* Bold text */
     margin: 0;
-
+    
     height: 100%;
 
     text-align: center;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,10 +309,10 @@ body {
     width: 100%;
     min-height: 150px;
     height: auto;
-
+    
     margin: 0;
     padding: 0;
-
+    
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center;  
@@ -320,29 +326,29 @@ body {
     padding-top: 10px;
     margin: 0;
     color: white; /* White text */
-
-    /* text-align: center; */
+    
+    text-align: center;
     font-size: 35px;
 }
 
 .how-much-ce-credit-button {
     background-color: #0F7CFB; /* Blue background */
     color: white; /* White text */
-
+    
     font-size: 30px; /* Larger font size */
     font-weight: bold; /* Bold text */
-
+    
     border-radius: 8px; /* Rounded corners */
     border: none; /* Remove border */
     cursor: pointer; /* Pointer cursor on hover */
-
+    
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-
+    
     width: 40%;
     /* height: 50px; */
     height: auto;
     min-height: 50px;
-
+    
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -380,6 +386,7 @@ body {
     height: 200%;
 }
 
+/* phone css up to here */
 .carousel-text{
     color: black;
 
