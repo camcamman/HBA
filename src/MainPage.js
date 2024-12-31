@@ -34,22 +34,30 @@ const CustomNavbar = () => {
         <div class="container">
             <div class="header-container">
                 <div class="how-to-get-licensed-button-container">
-                    <button className="how-to-get-licensed" >How to get Licensed</button>   
+                    <a href="https://hbautah.com/licensing-assistance/" target="_self">
+                        <button className="how-to-get-licensed" >How to get Licensed</button>   
+                    </a>   
                 </div>
 
                 <div class="transparent-box-container font-lato">
 
                     <div class="transparent-box transparent-box-1">
                         <p class="transparent-box-text">Webinar<br /> Continuing Education</p>
-                        <button class="enrroll-now-button">Enroll Now</button>
+                        <a href="https://utahhba.enrollware.com/schedule" target="_self" className="no-underline">
+                            <button class="enrroll-now-button" >Enroll Now</button>
+                        </a>
                     </div>
                     <div class="transparent-box transparent-box-2">
                         <p class="transparent-box-text">In Person<br /> Continuing Education</p>
-                        <button class="enrroll-now-button">Enroll Now</button>
+                        <a href="https://utahhba.enrollware.com/schedule" target="_self" className="no-underline">
+                            <button class="enrroll-now-button" >Enroll Now</button>
+                        </a>
                     </div>
                     <div class="transparent-box transparent-box-3">
                         <p class="transparent-box-text">Pre-License<br />Test Prep Courses</p>
-                        <button class="enrroll-now-button">Enroll Now</button>
+                        <a href="https://utahhomebuildersassociation.enrollware.com/schedule" target="_self" className="no-underline">
+                            <button class="enrroll-now-button" >Enroll Now</button>
+                        </a>
                     </div>
 
                 </div>
@@ -73,12 +81,16 @@ const CustomNavbar = () => {
                     <div class="gray-box-column subcontractor font-lato">
                       <p class = "gray-box-column-header">Subcontractor License</p>
                       <p>25 Hour Pre License Course</p>
-                      <button href="https://google.com" target="_self" class="register-here-gray">Register Here</button>
+                      <a href="https://utahhomebuildersassociation.enrollware.com/schedule" target="_self"  className="no-underline">
+                        <button target="_self" class="register-here-gray">Register Here</button>
+                      </a>
                     </div>
                     <div class="gray-box-column general-contractor font-lato">
                       <p class = "gray-box-column-header">30 Hour General Contractor License</p>
                       <p>25 Hour Pre License Course + 5 Hour Test Prep Course</p>
-                      <button href="https://google.com" target="_self" class="register-here-gray">Register Here</button>
+                      <a href="https://utahhomebuildersassociation.enrollware.com/schedule" target="_self"  className="no-underline">
+                        <button class="register-here-gray">Register Here</button>
+                      </a>
                     </div>
                   </div>
             </div>
